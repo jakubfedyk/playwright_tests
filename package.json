@@ -29,13 +29,13 @@
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "eslint": "^8.52.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.10.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "3.0.3"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "**/*": "prettier --write --ignore-unknown --no-stash"
   },
   "directories": {
     "test": "tests"
